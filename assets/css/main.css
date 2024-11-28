@@ -179,7 +179,7 @@ h6 {
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 15px 0;
+  padding: 15px 15px;
   transition: background-color 0.5s;
   z-index: 997;
 }
@@ -191,12 +191,12 @@ h6 {
 }
 
 .header .logo img {
-  height: 120px;
+  max-height: 5%;
   margin-left: 50px;
   margin-right: 30px;
   border-radius: 30px;
   transform: scale(1.2);
-  width: 180px;
+  max-width: 10%;
 }
 
 .header .logo h1 {
@@ -736,6 +736,7 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
+  margin-top: 40px;
 }
 
 .hero h2 {

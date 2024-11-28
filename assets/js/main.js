@@ -208,11 +208,13 @@
   window.addEventListener('scroll', function() {
     // Get the scroll position
     let scrollY = window.scrollY;
-  
-    // Calculate the opacity based on scroll (every 10px of scroll increases opacity by 0.01)
-    let opacity = Math.min(scrollY / 50, 1);  // Limit the max opacity to 0.1
-  
+
+    // Calculate the opacity based on scroll
+    // Every 150px of scroll increases opacity by 0.1
+    let opacity = Math.min(scrollY / 40 * 0.1, 1);  // Limit the max opacity to 1
+
     // Update the header background color with the calculated opacity
     document.querySelector('.header').style.setProperty('--background-color', `rgba(25, 158, 184, ${opacity})`);
-  });
+});
+
 })();
